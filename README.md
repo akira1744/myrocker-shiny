@@ -12,7 +12,7 @@ add: shiny-server
 docker volume create renv
 
 # イメージのpull
-docker pull nujabec/myrocker-shiny:20231116
+docker pull nujabec/myrocker-shiny:20240124
 
 # (イメージの作成)
 # docker compose build 
@@ -23,7 +23,7 @@ docker compose up -d
 ## push方法
 
 ```bash
-docker push nujabec/myrocker-shiny:20231116
+docker push nujabec/myrocker-shiny:20240124
 ```
 
 ## オフライン環境にdocker imageを持っていく方法
@@ -31,7 +31,7 @@ docker push nujabec/myrocker-shiny:20231116
 ```bash
 # オンライン端末でイメージを作成
 # docker imageをtarファイルに変換
-docker save nujabec/myrocker-shiny:20231116 > myrocker-shiny_20231116.tar 
+docker save nujabec/myrocker-shiny:20240124 > myrocker-shiny_20240124.tar 
 # オフライン端末で、tarファイルからdocker imageを読む
-docker load < myrocker-shiny_20231116.tar
+docker load < myrocker-shiny_20240124.tar
 ```
