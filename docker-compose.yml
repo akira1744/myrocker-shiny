@@ -6,7 +6,7 @@ services:
       context: ./docker/
       dockerfile: Dockerfile
     container_name: myrocker-shiny
-    image: nujabec/myrocker-shiny:20240124
+    image: nujabec/myrocker-shiny:20240411
     ports:
       - "8787:8787"
       - "3838:3838"
